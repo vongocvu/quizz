@@ -1,0 +1,32 @@
+* {
+      box-sizing: border-box;
+}
+
+.progess {
+      position: relative;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.7);
+    }
+
+    .progess::before {
+      content:  "";
+      position: absolute;
+      left: 33.3333%;
+      top: 50%;
+      height: 50%;
+      transform: translateY(-50%);
+      border-left: 2px solid rgba(255, 255, 255, 0.7);
+      z-index: 12;
+    }
+
+    .progess::after {
+      content:  "";
+      position: absolute;
+      right: 33.3333%;
+      top: 50%;
+      height: 50%;
+      transform: translateY(-50%);
+      border-left: 2px solid rgba(255, 255, 255, 0.7);
+      z-index: 12;
+    }
+  
